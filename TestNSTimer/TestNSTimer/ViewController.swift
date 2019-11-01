@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
 
     func backgroundTimerFiredBlock(timer: Timer) -> Void {
-        print("[BackgroundTimer] Timer Fired")
+        NSLog("[BackgroundTimer] Timer Fired")
     }
  }
 

@@ -24,12 +24,16 @@ final class BackgroundTimer {
     func schedule() {
         backgroundQueue.async { [weak self] in
             guard let self = self else {
-                print("[BackgroundTimer] self is nil ... ")
+                NSLog("[BackgroundTimer] self is nil ... ")
                 return
             }
-            print("[BackgroundTimer] Will be scheduled ... ")
-            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: self.block)
-            print("[BackgroundTimer] Start scheduled ... ")
+            NSLog("[BackgroundTimer] Will be scheduled ... ")
+            let runLoop = RunLoop.current
+            let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: self.block)
+            
+            runLoop.add(timer, forMode: .default)
+            runLoop.run()
+            NSLog("[BackgroundTimer] Start scheduled ... ")
         }
     }
 }
