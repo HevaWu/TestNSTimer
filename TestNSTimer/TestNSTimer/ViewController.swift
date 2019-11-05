@@ -28,7 +28,9 @@ class ViewController: UIViewController {
     }
     
     func gcdTimerFiredBlock() -> Void {
-        NSLog("[GCDTimer] Timer Fired")
+        DispatchQueue.main.async {
+            NSLog("[GCDTimer] Timer Fired")
+        }
     }
  }
 
