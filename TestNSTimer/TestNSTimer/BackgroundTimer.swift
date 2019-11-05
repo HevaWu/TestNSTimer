@@ -14,7 +14,7 @@ final class BackgroundTimer {
     private var block: (Timer) -> Void
     private let duration: TimeInterval
     
-    private let backgroundQueue = DispatchQueue(label: "backgroundQueue")
+    private let backgroundQueue = DispatchQueue(label: "backgroundQueue", attributes: .concurrent)
     
     init(duration: TimeInterval, block: @escaping (Timer) -> Void) {
         self.duration = duration

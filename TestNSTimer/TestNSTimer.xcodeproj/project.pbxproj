@@ -14,6 +14,7 @@
 		F0D8DAA1236C28FD008BBC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D8DAA0236C28FD008BBC76 /* Assets.xcassets */; };
 		F0D8DAA4236C28FD008BBC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D8DAA2236C28FD008BBC76 /* LaunchScreen.storyboard */; };
 		F0D8DAAC236C2945008BBC76 /* BackgroundTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D8DAAB236C2945008BBC76 /* BackgroundTimer.swift */; };
+		F0D8DAAE236C30F2008BBC76 /* GCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D8DAAD236C30F2008BBC76 /* GCDTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F0D8DAA3236C28FD008BBC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0D8DAA5236C28FD008BBC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0D8DAAB236C2945008BBC76 /* BackgroundTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTimer.swift; sourceTree = "<group>"; };
+		F0D8DAAD236C30F2008BBC76 /* GCDTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				F0D8DA99236C28F9008BBC76 /* SceneDelegate.swift */,
 				F0D8DA9B236C28F9008BBC76 /* ViewController.swift */,
 				F0D8DAAB236C2945008BBC76 /* BackgroundTimer.swift */,
+				F0D8DAAD236C30F2008BBC76 /* GCDTimer.swift */,
 				F0D8DA9D236C28F9008BBC76 /* Main.storyboard */,
 				F0D8DAA0236C28FD008BBC76 /* Assets.xcassets */,
 				F0D8DAA2236C28FD008BBC76 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				F0D8DA9C236C28F9008BBC76 /* ViewController.swift in Sources */,
 				F0D8DAAC236C2945008BBC76 /* BackgroundTimer.swift in Sources */,
 				F0D8DA98236C28F9008BBC76 /* AppDelegate.swift in Sources */,
+				F0D8DAAE236C30F2008BBC76 /* GCDTimer.swift in Sources */,
 				F0D8DA9A236C28F9008BBC76 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

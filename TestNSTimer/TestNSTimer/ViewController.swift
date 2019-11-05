@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var backgroundTimer: BackgroundTimer?
+    var gcdTimer: GCDTimer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,10 +18,17 @@ class ViewController: UIViewController {
         
         backgroundTimer = BackgroundTimer(duration: 3.0, block: backgroundTimerFiredBlock(timer:))
         backgroundTimer?.schedule()
+        
+        gcdTimer =  GCDTimer(duration: 3.0, block: gcdTimerFiredBlock)
+        gcdTimer?.schedule()
     }
 
     func backgroundTimerFiredBlock(timer: Timer) -> Void {
         NSLog("[BackgroundTimer] Timer Fired")
+    }
+    
+    func gcdTimerFiredBlock() -> Void {
+        NSLog("[GCDTimer] Timer Fired")
     }
  }
 
